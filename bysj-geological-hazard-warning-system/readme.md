@@ -85,20 +85,9 @@ frontend/src/
 - `wug-live.html`：WU 页面抓取 HTML 样本（手动测试生成）。
 - `wug-endpoints.txt`：从 WU 页面提取的接口端点记录。
 
-### 3.2 环境变量文件（发布版）
-发布仓库时建议：
-- 不提交 `.env`（包含密钥与本地运行配置）。
-- 提交 `.env.example` 作为模板，供使用者自行创建 `.env`。
+### 3.2 环境变量文件
+已提供 `.env.example` 作为模板，使用者可自行创建 `.env`。
 
-创建方式（Windows PowerShell）：
-```powershell
-Copy-Item .\.env.example .\.env
-```
-
-创建方式（Linux/macOS）：
-```bash
-cp .env.example .env
-```
 
 ## 4. 关键流程
 1. `data_collector_agent`：并发收集多源数据，记录成功/失败状态。  
